@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class User {
+
+constructor(name) {
+  this.name = name;
+}
+
+get name() {
+  return this._name;
+}
+
+set name(value) {
+  if (value.length < 4) {
+    alert("Name is too short.");
+    return;
+  }
+  this._name = value;
+}
+
+}
+
+let user = new User("John");
+alert(user.name); // John
+
+user = new User(""); 
+
+
+class User {
+  name = "John";
+
+  sayHi() {
+    alert(`Hello, ${this.name}!`);
+  }
+}
+
+new User().sayHi(); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        try {
+
+alert('Start of try runs')
+
+
+alert('End of try runs');  
+
+} catch (err) {
+
+alert('Catch is ignored, because there are no errors'); 
+
+}
+try {
+
+alert('Start of try runs');  
+
+lalala; 
+
+alert('End of try (never reached)');  
+
+} catch (err) {
+
+alert(`Error has occurred!`); 
+
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
